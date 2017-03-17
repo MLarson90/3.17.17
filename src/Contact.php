@@ -1,8 +1,8 @@
 <?php
   class Contact{
-    private $name
-    private $phone
-    private $address
+    private $name;
+    private $phone;
+    private $address;
 
     function __construct($name, $phone, $address){
       $this->name = $name;
@@ -35,6 +35,6 @@
     }
     static function deleteAll(){
       $_SESSION['list_of_address'] = array();
-    } 
+    }
   }
  ?>

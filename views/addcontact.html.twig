@@ -1,0 +1,11 @@
+{% include 'basetop.html.twig' %}
+<h2> Your new contact has been added! </h2>
+<p class="name">  {{ new_contact.getName }} </p>
+<p> Phone Number: {{ new_contact.getPhone }} </p>
+<p> Address: {{ new_contact.getAddress }} </p>
+<p><a href= '/'>Add another contact?</a></p>
+<form action="/viewcontacts" method="post">
+  <button type="submit">See Contacts</button>
+</form>
+
+{% include 'basebottom.html.twig' %}

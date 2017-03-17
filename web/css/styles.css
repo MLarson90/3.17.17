@@ -1,0 +1,9 @@
+.name{
+  border-bottom: 4px double black;
+  font-size: 20px;
+}
+#add{
+  margin: 20px 0px;
+  background: blue;
+  color: white;
+}

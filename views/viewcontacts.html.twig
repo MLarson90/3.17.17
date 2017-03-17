@@ -1,0 +1,14 @@
+{% include 'basetop.html.twig' %}
+
+  {% if testie is not empty %}
+    {% for testy in testie %}
+        <p class="name"> {{ testy.getName }} </p>
+        <p> Phone Number: {{ testy.getPhone }} </p>
+        <p> Address: {{ testy.getAddress }} </p>
+    {% endfor %}
+  {% endif %}
+  <form action="delete_all" method="post">
+    <button type="submit">Delete Contacts<button>
+  </form>
+
+{% include 'basebottom.html.twig' %}
