@@ -1,20 +1,6 @@
 {% include 'basetop.html.twig' %}
-<h2>Fill out forms below to add a new contact to your address book</h2>
-<div class="row">
-  <div class="col-md-4">
-    <form action='/addcontact' method='post'>
-      <label for='input_name'>Name</label>
-      <input id='input_name' name='input_name' type='text'>
-  </div>
-  <div class="col-md-4">
-      <label for='input_phone'>Phone Number</label>
-      <input id='input_phone' name='input_phone' type='text'>
-  </div>
-  <div class="col-md-4">
-      <label for='input_address'>Address</label>
-      <input id='input_address' name='input_address' type='text'>
-  </div>
-      <button id="add" type='submit'>Add Contact</button>
-    </form>
-</div>
+  <h2>Enter your name to start your new address book:</h2>
+  <form action='/form' method='post'>
+    <label for='username'></label>
+    <input id='username' name='username' type='text'required>
 {% include 'basebottom.html.twig' %}

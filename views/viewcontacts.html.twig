@@ -1,14 +1,15 @@
 {% include 'basetop.html.twig' %}
-
-  {% if testie is not empty %}
-    {% for testy in testie %}
-        <p class="name"> {{ testy.getName }} </p>
-        <p> Phone Number: {{ testy.getPhone }} </p>
-        <p> Address: {{ testy.getAddress }} </p>
+<h1> {{ Username.getUserName }}'s ADDRESS BOOK </h1>
+  {% if allcontacts is not empty %}
+    {% for allcontact in allcontacts %}
+        <p class="name"> {{ allcontact.getName }} </p>
+        <p> Phone Number: {{ allcontact.getPhone }} </p>
+        <p> Address: {{ allcontact.getAddress }} </p>
     {% endfor %}
   {% endif %}
+  <button class="add" id="morecontact" type="submit" ><a href= '/form'>home<a></button>
   <form action="delete_all" method="post">
-    <button type="submit">Delete Contacts<button>
+    <button class="add" type="submit">Delete Contacts</button>
   </form>
 
 {% include 'basebottom.html.twig' %}

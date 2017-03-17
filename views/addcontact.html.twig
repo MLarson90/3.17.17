@@ -3,9 +3,9 @@
 <p class="name">  {{ new_contact.getName }} </p>
 <p> Phone Number: {{ new_contact.getPhone }} </p>
 <p> Address: {{ new_contact.getAddress }} </p>
-<p><a href= '/'>Add another contact?</a></p>
+<button class="add" id="morecontact" type="submit"><a href= '/form'>Add another contact?</a></button>
 <form action="/viewcontacts" method="post">
-  <button type="submit">See Contacts</button>
+  <button  class="add" type="submit">See Contacts</button>
 </form>
 
 {% include 'basebottom.html.twig' %}

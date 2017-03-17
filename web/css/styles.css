@@ -2,8 +2,19 @@
   border-bottom: 4px double black;
   font-size: 20px;
 }
-#add{
+.add{
   margin: 20px 0px;
   background: blue;
   color: white;
+}
+a:link{
+  color:black;
+  text-decoration: none;
+}
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+  margin: 30px 0px;
 }
